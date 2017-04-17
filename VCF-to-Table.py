@@ -6,7 +6,7 @@ from Bio.Alphabet import IUPAC
 
 # 1. Create a dictionary for the VCF file data
 genomes_ncbi = SeqIO.to_dict(SeqIO.parse("NC_004368.gb", "gb")) # Load load reference genome downloaded from NCBI database
-f = open("bubbles-in-sample.decomp.vcf")
+f = open("bubbles-between-507-509.decomp.vcf")
 genomes = {}
 for line in f:
     if not re.match(r'^#', line, re.M|re.I):
