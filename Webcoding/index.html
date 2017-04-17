@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js">
+        </script>
+        <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+        <script src="js/index.js"></script>
+        <title>Streptococcus</title>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td id="static">
+                    <table id="left">
+                        <tr>
+                            <td class="upper" id="title">
+                                <div id="title_div">Streptococcus</div>
+                            </td>
+                            <td class="upper" id="ref_tag">Reference</td>
+                        </tr>
+                        <tr>
+                            <td class="lower" id="phylogeny">
+                                <div id="tree"></div>
+                            </td>
+                            <td class="lower" id="gids">
+                                <table>
+                                    <tr>
+                                        <td id="pos_tag">position</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <table id="gidnames"></table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td id="active">
+                    <table>
+                        <tr>
+                            <td id="ref">
+                                <div style="overflow-x:auto;" id="refflow">
+                                    <div id="refmap">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="variants">
+                                <div style="overflow-x:auto;" id="snp">
+                                    <table id="DF"></table>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
